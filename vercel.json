@@ -1,13 +1,4 @@
 {
-    "extension": [
-        "ts",
-        "tsx",
-        "js",
-        "jsx",
-        "json",
-        "css",
-        "html"
-    ],
     "rewrites": [
         {
             "source": "/naver-search/:match*",
