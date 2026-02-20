@@ -1,0 +1,37 @@
+{
+    "extension": [
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "css",
+        "html"
+    ],
+    "rewrites": [
+        {
+            "source": "/naver-search/:match*",
+            "destination": "https://openapi.naver.com/:match*"
+        },
+        {
+            "source": "/naver-ads/:match*",
+            "destination": "https://api.naver.com/:match*"
+        },
+        {
+            "source": "/naver-blog/:match*",
+            "destination": "https://blog.naver.com/:match*"
+        },
+        {
+            "source": "/naver-rss/:match*",
+            "destination": "https://rss.blog.naver.com/:match*"
+        },
+        {
+            "source": "/naver-postlist/:match*",
+            "destination": "https://blog.naver.com/:match*"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}

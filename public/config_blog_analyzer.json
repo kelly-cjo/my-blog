@@ -1,0 +1,17 @@
+{
+  "naverSearch": {
+    "clientId": "M6a2mvi_Is3ib4LEDv5W",
+    "clientSecret": "8cWNU0ihKw"
+  },
+  "searchAds": {
+    "licenseKey": "0100000000a625560b507874f8806531989b889957c61b56f731971115a3eac9bb3b3873a8",
+    "secretKey": "AQAAAACmJVYLUHh0+IBlMZibiJlX2zANRyG3FOVkQjTEwlMlhQ==",
+    "customerId": "763"
+  },
+  "analysisDefaults": {
+    "blogId": "gabianow",
+    "count": 5,
+    "offset": 1
+  },
+  "googleAppsScriptUrl": ""
+}
