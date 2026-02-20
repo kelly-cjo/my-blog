@@ -373,5 +373,6 @@ export const analyzeBlogPosts = async (
         bestRank,
         otherGoodKeywords,
         finalKeyword,
+        searchVolume: null,
     };
 };
