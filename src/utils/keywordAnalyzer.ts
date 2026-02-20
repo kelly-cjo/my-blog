@@ -26,6 +26,7 @@ export interface AnalysisFinalResult {
     bestRank: number | null;
     otherGoodKeywords: RankEntry[];
     finalKeyword: string | null;
+    searchVolume: { totalVolume: number; monthlyPcQcCnt: number; monthlyMobileQcCnt: number } | null;
 }
 
 // ─────────────────────────────────────────────
