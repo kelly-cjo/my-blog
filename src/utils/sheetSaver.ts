@@ -58,8 +58,9 @@ export const saveToGoogleSheet = async (
 
         await fetch(appsScriptUrl, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            mode: 'no-cors', // 구글 앱스 스크립트 리다이렉트 대응 (선택사항)
+            // text/plain으로 보내야 CORS preflight(OPTIONS 메서드)를 유발하지 않음
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            mode: 'no-cors',
             body: JSON.stringify(payload),
         });
 

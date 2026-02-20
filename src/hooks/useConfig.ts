@@ -41,6 +41,9 @@ export const useConfig = (onLog: (msg: string) => void) => {
                 if (response.ok) {
                     const data = await response.json();
                     setConfig(data);
+                    if (!data.googleAppsScriptUrl) {
+                        onLog('주의: 설정 파일에 googleAppsScriptUrl이 없습니다.');
+                    }
                     onLog('설정 파일(config)을 불러왔습니다.');
                 } else {
                     onLog('기본 설정을 사용합니다.');
